@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Anna Korsak](https://up.htmlacademy.ru/htmlcss/29/user/240292).
-* Наставник: [Алексей Пудник](https://htmlacademy.ru/profile/id71418).
+* Наставник: [Алексей Пудников](https://htmlacademy.ru/profile/id71418).
 
 ---
 
