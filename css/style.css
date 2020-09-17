@@ -59,7 +59,8 @@ header, .tagline {
     background-color: var(--basic-inactive-grey);
 }
 
-.site-navigation {
+.site-navigation,
+.cart {
     list-style: none;
 }
 
@@ -67,13 +68,16 @@ header, .tagline {
     background-color: var(--basic-black);
 }
 
-.site-navigation a {
+.site-navigation a, 
+.cart a {
     color: var(--basic-black);
     text-transform: uppercase;
     font-weight: 500;
 }
 .site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation a:focus, 
+.cart a:hover,
+.cart a:focus {
     color: var(--basic-hover-red);
 }
 
@@ -86,3 +90,138 @@ header, .tagline {
     border-bottom: 2px solid var(--basic-red);
     padding-bottom: 20px;
 }
+
+.tagline p {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;  
+}
+
+.tagline h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;  
+  }
+
+  .services-list {
+    list-style: none;
+  }
+
+  .services-list h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  .services-list p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .description-left h3 {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+  }
+
+  .description h4 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .description-left p, ul {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 20px;
+  }
+
+  .description-numbers {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400; 
+   
+  }
+
+  .description-numbers .description-numbers-percents {
+    font-size: 45px;
+    line-height: 64px;
+    font-weight: 700; 
+  }
+
+  .partners-list li {
+    list-style: none;
+    display: inline; 
+  }
+
+  .contacts h4 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700; 
+  }
+
+  .contacts p {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400; 
+  }
+
+  .contacts-phone {
+    color: inherit;
+  }
+
+  .footer-social li{
+    display: inline; 
+  }
+  
+  .footer-social {
+    list-style: none;
+  }
+
+  .footer-discount h3 {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;  
+  }
+
+  .footer-discount h4 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;  
+  }
+
+  .button {
+    font: inherit;
+    text-align: center;
+    color: var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+    padding: 17px 40px;
+  }
+
+  .button-red {
+    background-color: var(--basic-red);
+  }
+
+  .button-green {
+    background-color: var(--basic-green); 
+  }
+
+  .button-yellow {
+    background-color: var(--basic-yellow); 
+  }
+
+  .button-red:hover {
+      cursor: pointer;
+      background-color: var(--basic-hover-red);
+  }
+
+  .button-red:active {
+    /* TODO: как поставить opacity на текст? */
+    cursor: pointer;
+    background-color: var(--basic-active-red);
+  }

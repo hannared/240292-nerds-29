@@ -17,16 +17,15 @@
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии дизайна nёrd's»">
       </a>
       <ul class="site-navigation">
-        <li><a class="site-navigation-selected" href="">Студия</a></li>
+        <li><a href="">Студия</a></li>
         <li><a href="">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="">Контакты</a></li>
       </ul>
 
-      <a href="">shop icon</a>
-      <ul>
+      <ul class="cart">
         <li>
-          <a class="cart-link" href=""><span>Корзина</span></a>
+          <a href=""><span>Корзина</span></a>
         </li>
       </ul>
     </nav>
@@ -36,7 +35,7 @@
     <article class="tagline">
       <p>Долго, дорого и скрупулезно</p>
       <h3>Математически выверенный дизайн для вашего сайта или приложения</h3>
-      <button class="button">Узнать больше</button>
+      <button type="button" class="button button-red">Узнать больше</button>
 
       <figure>
         <img src="img/nerds-index-slide1.1.png" alt="Слайд1">
@@ -46,35 +45,41 @@
     </article>
 
     <section class="services">
-      <h2>Услуги</h2>
+      <h2 class="visually-hidden">Услуги</h2>
       <ul class="services-list">
         <li>
-          <a href="#shop-web">
-            <img src="img/illustration-1.1.png" alt="Веб-сайты»">
-          </a>
-          <h3>Веб-сайты</h3>
-          <p>
-            Мир никогда не будет прежним после того как увидит ваш сайт!
-          </p>
-          <button class="button">Заказать</button>
+          <div>
+            <a href="#shop-web">
+              <img src="img/illustration-1.1.png" alt="Веб-сайты»">
+            </a>
+            <h3>Веб-сайты</h3>
+            <p>
+              Мир никогда не будет прежним после того как увидит ваш сайт!
+            </p>
+            <button class="button button-red">Заказать</button>
+          </div>
         </li>
         <li>
-          <a href="#shop-app">
-            <img src="img/illustration-2.1.png" alt="Приложения»">
-          </a>
-          <h3>Приложения</h3>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <button class="button">Заказать</button>
+          <div>
+            <a href="#shop-app">
+              <img src="img/illustration-2.1.png" alt="Приложения»">
+            </a>
+            <h3>Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <button class="button button-green">Заказать</button>
+          </div>
         </li>
         <li>
-          <a href="#shop-presentation">
-            <img src="img/illustration-3.1.png" alt="Презентации»">
-          </a>
-          <h3>Презентации</h3>
-          <p>
-            Вы даже не подозреваете, насколько вы изумительны!
-          </p>
-          <button class="button">Заказать</button>
+          <div>
+            <a href="#shop-presentation">
+              <img src="img/illustration-3.1.png" alt="Презентации»">
+            </a>
+            <h3>Презентации</h3>
+            <p>
+              Вы даже не подозреваете, насколько вы изумительны!
+            </p>
+            <button class="button button-yellow">Заказать</button>
+          </div>
         </li>
       </ul>
     </section>
@@ -98,15 +103,15 @@
         <h4>с 2004 года Любим точность во всем:</h4>
         <ul class=description-numbers>
           <li>
-            <p>146%</p>
+            <p class="description-numbers-percents">146%</p>
             <p>Уровень самоотдачи</p>
           </li>
           <li>
-            <p>100%</p>
+            <p class="description-numbers-percents">100%</p>
             <p>Соблюдение сроков</p>
           </li>
           <li>
-            <p>50%</p>
+            <p class="description-numbers-percents">50%</p>
             <p>Минимальная предоплата</p>
           </li>
         </ul>
@@ -115,7 +120,7 @@
 
     <section class=partners>
       <h2>Партнеры</h2>
-      <ul>
+      <ul class="partners-list">
         <li>
           <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/Group5.png" alt="https://htmlacademy.ru/intensive/htmlcss">
@@ -143,11 +148,11 @@
       <img src="img/map1.png" alt="Карта">
       <img src="img/map-marker1.png" alt="Мы тут">
       <div class="contacts">
-        <h2>Контакты</h2>
+        <h2 class="visually-hidden">Контакты</h2>
         <h4>NЁRDS DESIGN STUDIO</h4>
         <p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. <a class="contacts-phone" href="+7 (812) 275-75-75"></a></p>
-        <button class="button">Напишите нам</button>
+        <p>тел. <a class="contacts-phone" href="+7 (812) 275-75-75">+7 (812) 275-75-75</a></p>
+        <button class="button button-red">Напишите нам</button>
       </div>
     </div>
   </main>
@@ -155,13 +160,16 @@
   <footer class="page-footer">
     <ul class="footer-social">
       <li>
-        <a class="social-button" href="https://www.vk.com" target="_blank">Vkontakte</a>
+        <a class="social-button" href="https://www.vk.com" target="_blank"></a>
+          <span class="visually-hidden">Vkontakte</span> 
       </li>
       <li>
-        <a class="social-button" href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <a class="social-button" href="https://www.facebook.com/" target="_blank"></a>
+        <span class="visually-hidden">Facebook</span>
       </li>
       <li>
-        <a class="social-button" href="https://www.instagram.com" target="_blank">Instagram</a>
+        <a class="social-button" href="https://www.instagram.com" target="_blank"></a>
+        <span class="visually-hidden">Instagram</span>
       </li>
     </ul>
     <div class="footer-discount">
