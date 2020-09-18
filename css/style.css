@@ -243,8 +243,24 @@ ul {
     background-color: var(--basic-active-grey);
 }
 
-.catalog-item {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+.catalog-item-selected {
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2)
+}
+
+.catalog-item-header {
+    background-color: var(--basic-inactive-grey);
+}
+
+.catalog-item-header-selected {
+    background-color: var(--control-active);
+}
+
+.catalog-item-circle {
+    height: 10px;
+    width: 10px;
+    background-color: var(--basic-white);
+    border-radius: 50%;
+    display: inline-block;
 }
 
 .catalog-item-price {
