@@ -11,25 +11,26 @@
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo">
-                <a href="index.html">
-                    <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии дизайна nёrd's»">
-                </a>
+                <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии дизайна nёrd's»">
             </a>
-            <ul class="list-unstyled page-links">
-                <li><a href="">Студия</a></li>
-                <li><a href="">Клиенты</a></li>
-                <li><a class="page-links-selected" href="catalog.html">Магазин</a></li>
-                <li><a href="">Контакты</a></li>
-            </ul>
-
-            <ul class="list-unstyled page-links">
-                <li>
-                    <a href="#cart">
-                        <img src="img/cart-icon.svg" width="15" height="15" alt="">
-                        <span>Корзина</span>
-                    </a>
-                </li>
-            </ul>
+            <div class="main-navigation-wrapper">
+                <ul class="list-unstyled page-links">
+                    <li><a class="page-link" href="">Студия</a></li>
+                    <li><a class="page-link" href="">Клиенты</a></li>
+                    <li><a class="page-link page-link-selected" href="catalog.html">Магазин</a></li>
+                    <li><a class="page-link" href="">Контакты</a></li>
+                </ul>
+                <div class="user-navigation">
+                    <ul class="list-unstyled page-links">
+                        <li>
+                            <a href="#cart">
+                                <img src="img/cart-icon.svg" width="15" height="15" alt="">
+                                <span>Корзина</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -37,16 +38,16 @@
         <h1>Магазин готовых шаблонов</h1>
         <section class="filters">
             <h2 class="visually-hidden">Фильтр</h2>
-            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
                 <fieldset>
                     <legend>Стоимость:</legend>
                     <ul class="list-unstyled">
                         <li>
                             <div class="price-range">
                                 <span>от</span>
-                                <input class="price-range-from" type="text" value="0">
+                                <input class="price-range-from" type="number" name="min-price" id="min-price" min="0" value="0">
                                 <span>до</span>
-                                <input class="price-range-to" type="text" value="14000">
+                                <input class="price-range-to" type="number" name="max-price" id="max-price" max="14000" value="1400">
                             </div>
                         </li>
                     </ul>
@@ -100,7 +101,7 @@
         </section>
 
         <section class="sort">
-            <form method="get" action="https://echo.htmlacademy.ru">
+            <form method="GET" action="https://echo.htmlacademy.ru">
                 <fieldset>
                     <legend>Сортировать:</legend>
                     <ul class="list-soting list-unstyled">

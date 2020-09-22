@@ -46,13 +46,66 @@ img {
     height: auto;
 }
 
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content min-content;
+    align-content: start;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.main-navigation {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+}
+
+.main-navigation-wrapper {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+}
+
+.user-navigation {
+    padding: 0;
+    margin: 0;
+}
+
+.main-header-logo {
+    width: 160px;
+    height: 65px;
+}
+
 .main-header,
 .tagline {
     background-color: var(--basic-inactive-grey);
 }
 
+.tagline {
+    margin-bottom: 80px;
+}
+
+.slide {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
 .list-unstyled {
     list-style: none;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 100px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.services-buy-container {
+    width: 94%;
 }
 
 .site-navigation-current a:not([href]) {
@@ -74,50 +127,61 @@ img {
     color: var(--basic-grey);
 }
 
-.page-links-selected {
+.page-link-selected {
     display: inline-block;
     border-bottom: 2px solid var(--basic-red);
     padding-bottom: 20px;
 }
 
-.tagline p {
+.tagline-title {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
 }
 
-.tagline h3 {
+.tagline-description {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
 }
 
-.services-list h3 {
+.services-title {
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
-.services-list p {
+.services-description {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
 }
 
-.description-left h3 {
+.services-container {
+    padding-bottom: 80px;
+    border-bottom: 2px solid var(--basic-inactive-grey);
+    margin-bottom: 80px;
+}
+
+.description-container {
+    display: grid;
+}
+
+.description-left-title {
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
 }
 
-.description h4 {
+.description-list-list {
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.description-left p,
+.description-left-details,
 ul {
     font-size: 16px;
     line-height: 24px;
@@ -141,13 +205,13 @@ ul {
     display: inline;
 }
 
-.contacts h4 {
+.contacts-title {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
 }
 
-.contacts p {
+.contacts-block {
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
