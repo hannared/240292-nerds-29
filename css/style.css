@@ -73,13 +73,19 @@ img {
     margin: 0;
 }
 
+.page-links {
+    padding: 0;
+    margin: 0;
+}
+
 .main-header-logo {
     width: 160px;
     height: 65px;
 }
 
 .main-header,
-.tagline {
+.tagline,
+.catalog-title {
     background-color: var(--basic-inactive-grey);
 }
 
@@ -166,6 +172,15 @@ img {
 
 .description-container {
     display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-bottom: 80px;
+    border-bottom: solid 2px var(--basic-inactive-grey);
+    margin-bottom: 46px;
+}
+
+.description-numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .description-left-title {
@@ -174,15 +189,15 @@ img {
     font-weight: 500;
 }
 
-.description-list-list {
+.description-left-list,
+.description-right-list {
     font-size: 16px;
     line-height: 24px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.description-left-details,
-ul {
+.description-left-details {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -201,8 +216,20 @@ ul {
     font-weight: 700;
 }
 
+.partners-container {
+    padding-bottom: 40px;
+    margin-bottom: 88px;
+    border-bottom: 2px solid var(--basic-inactive-grey);
+}
+
+.partners-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .partners-list li {
-    display: inline;
+    justify-self: center;
+    border-right: 1px solid var(--basic-inactive-grey);
 }
 
 .contacts-title {
@@ -221,17 +248,29 @@ ul {
     color: inherit;
 }
 
-.footer-social li {
-    display: inline;
+.page-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 140px;
 }
 
-.footer-discount h3 {
+.footer-social {
+    width: 260px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-discount {
+    width: 760px;
+}
+
+.footer-discount-friends {
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
 }
 
-.footer-discount h4 {
+.footer-discount-percents {
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
@@ -307,6 +346,15 @@ ul {
     background-color: var(--basic-active-grey);
 }
 
+.catalog-title-font {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 400;
+    margin: 0;
+    padding: 85px 0 116px 0;
+    text-align: center;
+}
+
 .catalog-item-selected {
     box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2)
 }
@@ -329,4 +377,21 @@ ul {
 
 .catalog-item-price {
     background-color: var(--basic-inactive-grey);
+}
+
+.map-container {
+    display: grid;
+    position: relative;
+}
+
+.map-pin {
+    position: absolute;
+    top: -346px;
+    left: 213px;
+}
+
+#map {
+    width: 1440px;
+    height: 416px;
+    justify-self: center;
 }
