@@ -43,14 +43,12 @@
                 <form method="GET" action="https://echo.htmlacademy.ru">
                     <fieldset>
                         <legend class="sorting-text">Стоимость:</legend>
-                        <ul class="list-unstyled">
+                        <ul class="price-range list-unstyled">
                             <li>
-                                <div class="price-range">
-                                    <span>от</span>
-                                    <input class="price-range-from" type="number" name="min-price" id="min-price" min="0" value="0">
-                                    <span>до</span>
-                                    <input class="price-range-to" type="number" name="max-price" id="max-price" max="14000" value="14000">
-                                </div>
+                                <label id="min-price">от</label>
+                                <input class="price-range-from" type="number" name="min-price" id="min-price" min="0" value="0" step="100">
+                                <label id="max-price">до</label>
+                                <input class="price-range-to" type="number" name="max-price" id="max-price" max="14000" value="14000" step="100">
                             </li>
                         </ul>
                     </fieldset>
@@ -103,7 +101,7 @@
             </section>
 
             <div class="main-content-catalog">
-                <section class="sorting">
+                <aside class="sorting">
                     <form method="GET" action="https://echo.htmlacademy.ru">
                         <fieldset>
                             <legend class="sorting-text">Сортировать:</legend>
@@ -120,7 +118,7 @@
                             </ul>
                         </fieldset>
                     </form>
-                </section>
+                </aside>
 
                 <article class="catalog">
                     <h2 class="visually-hidden">Каталог проектов</h2>
@@ -234,16 +232,16 @@
                 </article>
 
                 <ul class="pagination list-unstyled">
-                    <li>
+                    <li class="pagination-number pagination-number-selected">
                         <a>1</a>
                     </li>
-                    <li>
+                    <li class="pagination-number">
                         <a href="#">2</a>
                     </li>
-                    <li>
+                    <li class="pagination-number">
                         <a href="#">3</a>
                     </li>
-                    <li>
+                    <li class="pagination-number">
                         <a href="#">4</a>
                     </li>
                 </ul>
