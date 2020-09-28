@@ -284,39 +284,32 @@
             </ul>
             <div class="footer-discount">
                 <p class="footer-discount-friends">Давайте дружить, это выгодно!</p>
-                <h3 class="footer-discount-percents">Скидка 10% для друзей из социальных сетей.</h4>
+                <h3 class="footer-discount-percents">Скидка 10% для друзей из социальных сетей.</h3>
             </div>
         </footer>
 
         <script>
-            var map;
-
             function initMap() {
-                map = new google.maps.Map(
+                var map = new google.maps.Map(
                     document.getElementById('map'), {
                         center: new google.maps.LatLng(59.938883, 30.323546),
                         zoom: 18
-                    });
+                    })
 
-                var icons = {
-                    info: {
-                        icon: 'img/map-marker1.png'
-                    }
-                };
-
-                var features = [{
+                var mapPin = {
                     position: new google.maps.LatLng(59.938883, 30.323546),
                     type: 'info'
-                }];
+                }
 
-                // Create markers.
-                for (var i = 0; i < features.length; i++) {
-                    new google.maps.Marker({
-                        position: features[i].position,
-                        icon: icons[features[i].type].icon,
-                        map: map
-                    });
-                };
+                var Icon = {
+                    info: 'img/map-marker1.png'
+                }
+
+                new google.maps.Marker({
+                    position: mapPin.position,
+                    icon: Icon[mapPin.type],
+                    map: map
+                })
             }
         </script>
         <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9gQQ9VEC1RVc6mKvGpTQT2QxhcTa1LqY&callback=initMap">
