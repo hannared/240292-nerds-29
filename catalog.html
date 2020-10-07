@@ -37,28 +37,42 @@
         <div class="main-content container">
             <section class="filters">
                 <h2 class="visually-hidden">Фильтр</h2>
-                <form method="GET" action="https://echo.htmlacademy.ru">
-                    <fieldset>
+                <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
+
+                    <fieldset class="filter-range filter-item">
                         <legend class="sorting-text">Стоимость:</legend>
-                        <ul class="price-range list-unstyled">
-                            <li>
-                                <label id="min-price">от</label>
-                                <input class="price-range-from" type="number" name="min-price" id="min-price" min="0" value="0" step="100">
-                                <label id="max-price">до</label>
-                                <input class="price-range-to" type="number" name="max-price" id="max-price" max="14000" value="14000" step="100">
-                            </li>
-                        </ul>
+                        <div class="range-filter">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar" style="
+                                    width: 30%;
+                                    margin-left: 20%
+                                  "></div>
+                                </div>
+                                <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
+                                <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
+                            </div>
+                            <div class="price-controls">
+                                <label id="min-price">
+                                    от<input class="price-range-from" type="number" name="min-price" id="min-price" min="0" value="0" step="100">
+                                </label>
+
+                                <label id="max-price">
+                                    до
+                                    <input class="price-range-to" type="number" name="max-price" id="max-price" max="14000" value="14000" step="100">
+                                </label>
+                            </div>
                     </fieldset>
 
-                    <fieldset>
+                    <fieldset class="filter-layout filter-item">
                         <legend class="sorting-text">Сетка:</legend>
-                        <ul class="list-unstyled">
+                        <ul class="filter-layout-list list-unstyled">
                             <li class="filter-option filter-radio">
-                                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid-group" value="adapted" id="filter-adapted">
+                                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid-group" value="adapted" id="filter-adapted" checked>
                                 <label for="filter-adapted">Адаптивная</label>
                             </li>
                             <li class="filter-option filter-radio">
-                                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid-group" value="fixed" id="filter-fixed" checked>
+                                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid-group" value="fixed" id="filter-fixed">
                                 <label for="filter-fixed">Фиксированная</label>
                             </li>
                             <li class="filter-option filter-radio">
@@ -68,28 +82,28 @@
                         </ul>
                     </fieldset>
 
-                    <fieldset>
+                    <fieldset class="filter-feature filter-item">
                         <legend class="sorting-text">Особенности:</legend>
                         <ul class="list-unstyled">
                             <li class="filter-option filter-checkbox">
-                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-slider" checked>
-                                <label for="filter-slider">Слайдер</label>
+                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-slider " checked>
+                                <label for="filter-slider"><span></span>Слайдер</label>
                             </li>
                             <li class="filter-option filter-checkbox">
                                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="block" id="filter-block">
-                                <label for="filter-block">Блок преимуществ</label>
+                                <label for="filter-block"><span></span>Блок преимуществ</label>
                             </li>
                             <li class="filter-option filter-checkbox">
-                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news" checked>
-                                <label for="filter-news">Новости</label>
+                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news " checked>
+                                <label for="filter-news"><span></span>Новости</label>
                             </li>
                             <li class="filter-option filter-checkbox">
                                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallery" id="filter-gallery">
-                                <label for="filter-gallery">Галерея</label>
+                                <label for="filter-gallery"><span></span>Галерея</label>
                             </li>
                             <li class="filter-option filter-checkbox">
-                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="cart" id="filter-cart">
-                                <label for="filter-cart">Корзина</label>
+                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="cart" id="filter-cart ">
+                                <label for="filter-cart"><span></span>Корзина</label>
                             </li>
                         </ul>
                     </fieldset>
@@ -100,7 +114,7 @@
             <div class="main-content-catalog">
                 <aside class="sorting">
                     <form method="GET" action="https://echo.htmlacademy.ru">
-                        <fieldset>
+                        <fieldset class="filter-item">
                             <legend class="sorting-text">Сортировать:</legend>
                             <ul class="list-soting list-unstyled">
                                 <li>
@@ -243,72 +257,77 @@
                     </li>
                 </ul>
             </div>
-        </div>
-
-        <div class="map">
-            <div class="map-container">
-                <div id="map"></div>
             </div>
 
-            <div class="contacts">
-                <h2 class="visually-hidden">Контакты</h2>
-                <h4 class="contacts-title">NЁRDS DESIGN STUDIO</h4>
-                <p class="contacts-block">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                <p class="contacts-block">тел. <a class="contacts-phone" href="+7 (812) 275-75-75">+7 (812) 275-75-75</a></p>
-                <button class="button button-red">Напишите нам</button>
-            </div>
-        </div>
+            <div class="map">
+                <div class="map-container">
+                    <div id="map"></div>
+                </div>
 
-        <footer class="page-footer container">
-            <ul class="footer-social list-unstyled">
-                <li>
-                    <a class="social-button" href="https://www.vk.com" target="_blank">
-                        <span class="visually-hidden">Vk</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="social-button" href="https://www.facebook.com/" target="_blank">
-                        <span class="visually-hidden">Fb</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="social-button" href="https://www.instagram.com" target="_blank">
-                        <span class="visually-hidden">Ig</span>
-                    </a>
-                </li>
-            </ul>
-            <div class="footer-discount">
-                <p class="footer-discount-friends">Давайте дружить, это выгодно!</p>
-                <h3 class="footer-discount-percents">Скидка 10% для друзей из социальных сетей.</h3>
+                <div class="contacts">
+                    <div class="contacts-wrapper">
+                        <h2 class="visually-hidden">Контакты</h2>
+                        <h4 class="contacts-title">NЁRDS DESIGN STUDIO</h4>
+                        <p class="contacts-block">191186, Санкт-Петербург,<br/> ул. Б. Конюшенная, д. 19/8</p>
+                        <p class="contacts-phone">тел. <a class="contacts-phone-number" href="+7 (812) 275-75-75">+7 (812) 275-75-75</a></p>
+                        <button class="button button-red">Напишите нам</button>
+                    </div>
+                </div>
             </div>
-        </footer>
 
-        <script>
-            function initMap() {
-                var map = new google.maps.Map(
-                    document.getElementById('map'), {
-                        center: new google.maps.LatLng(59.938883, 30.323546),
-                        zoom: 18
+            <footer class="page-footer container">
+                <ul class="footer-social list-unstyled">
+                    <li>
+                        <a class="social-button" href="https://www.vk.com" target="_blank">
+                            <img src="img/icon-vk.svg" width="26" height="15" alt="vkontakte">
+                            <span class="visually-hidden">Vk</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-button" href="https://www.facebook.com/" target="_blank">
+                            <img src="img/icon-fb.svg" width="12" height="22" alt="facebook">
+                            <span class="visually-hidden">Fb</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-button" href="https://www.instagram.com" target="_blank">
+                            <img src="img/icon-ig.svg" width="21" height="21" alt="instagram">
+                            <span class="visually-hidden">Ig</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer-discount">
+                    <p class="footer-discount-friends">Давайте дружить, это выгодно!</p>
+                    <h3 class="footer-discount-percents">Скидка 10% для друзей из социальных сетей.</h3>
+                </div>
+            </footer>
+
+            <script>
+                function initMap() {
+                    var map = new google.maps.Map(
+                        document.getElementById('map'), {
+                            center: new google.maps.LatLng(59.938883, 30.323546),
+                            zoom: 18
+                        })
+
+                    var mapPin = {
+                        position: new google.maps.LatLng(59.938883, 30.323546),
+                        type: 'info'
+                    }
+
+                    var Icon = {
+                        info: 'img/map-marker1.png'
+                    }
+
+                    new google.maps.Marker({
+                        position: mapPin.position,
+                        icon: Icon[mapPin.type],
+                        map: map
                     })
-
-                var mapPin = {
-                    position: new google.maps.LatLng(59.938883, 30.323546),
-                    type: 'info'
                 }
-
-                var Icon = {
-                    info: 'img/map-marker1.png'
-                }
-
-                new google.maps.Marker({
-                    position: mapPin.position,
-                    icon: Icon[mapPin.type],
-                    map: map
-                })
-            }
-        </script>
-        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9gQQ9VEC1RVc6mKvGpTQT2QxhcTa1LqY&callback=initMap">
-        </script>
+            </script>
+            <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9gQQ9VEC1RVc6mKvGpTQT2QxhcTa1LqY&callback=initMap">
+            </script>
 
 
     </main>
