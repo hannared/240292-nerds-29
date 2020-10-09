@@ -114,19 +114,30 @@
             <div class="main-content-catalog">
                 <aside class="sorting">
                     <form method="GET" action="https://echo.htmlacademy.ru">
-                        <fieldset class="filter-item">
-                            <legend class="sorting-text">Сортировать:</legend>
-                            <ul class="list-soting list-unstyled">
-                                <li>
-                                    <a href="#price">по цене</a>
-                                </li>
-                                <li>
-                                    <a href="#type">по типу</a>
-                                </li>
-                                <li>
-                                    <a href="#title">по названию</a>
-                                </li>
-                            </ul>
+                        <fieldset class="sorting-filter filter-item">
+                            <div>
+                                <legend class="sorting-text">Сортировать:</legend>
+                            </div>
+                            <div class="sorting-filter-options">
+                                <ul class="sorting-list list-unstyled">
+                                    <li>
+                                        <a href="#price">по цене</a>
+                                    </li>
+                                    <li>
+                                        <a href="#type">по типу</a>
+                                    </li>
+                                    <li>
+                                        <a href="#title">по названию</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="arrows">
+                                <ul class="arrows-list list-unstyled">
+                                    <li class="arrow-down"></li>
+                                    <li class="arrow-up"></li>
+                                </ul>
+                            </div>
                         </fieldset>
                     </form>
                 </aside>
@@ -242,18 +253,18 @@
                     </ul>
                 </article>
 
-                <ul class="pagination list-unstyled">
-                    <li class="pagination-number pagination-number-selected">
+                <ul class="pagination-list list-unstyled">
+                    <li class="pagination-item pagination-item-current">
                         <a>1</a>
                     </li>
-                    <li class="pagination-number">
+                    <li class="pagination-item">
                         <a href="#">2</a>
                     </li>
-                    <li class="pagination-number">
+                    <li class="pagination-item">
                         <a href="#">3</a>
                     </li>
-                    <li class="pagination-number">
-                        <a href="#">4</a>
+                    <li class="pagination-item pagination-item-next">
+                        <a href="#">Следующая</a>
                     </li>
                 </ul>
             </div>
