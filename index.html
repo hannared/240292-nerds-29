@@ -204,25 +204,39 @@
                 </div>
             </div>
         </div>
-        <!--<section class="modal">
-                <h2>Напишите нам</h2>
-                <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
-                    <p>
-                        <label for="user-name">Ваше имя</label>
-                        <input class="contact-user-name" id="user-name" type="??" name="login" placeholder="Представьтесь, пожалуйста">
-                    </p>
-                    <p>
-                        <label for="user-email">Ваш e-mail</label>
-                        <input class="contact-user-email" id="user-email" type="email" name="email" placeholder="Для отправки ответа">
-                    </p>
-                    <p>
-                        <label for="user-text">Текст письма</label>
-                        <input class="contact-user-text" id="user-text" type="??" name="text" placeholder="В свободной форме">
-                    </p>
-                    <button class="button button-red" type="submit">Отправить</button>
-                </form>
-                <button type="button">Закрыть</button>
-            </section>-->
+        <section class="modal modal-contact">
+            <h2 class="modal-contact-title">Напишите нам</h2>
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <div class="contact-form">
+                    <div class="contact-form-user">
+                        <fieldset class="form-fields">
+                            <p>
+                                <label for="user-name">Ваше имя</label>
+                                <input class="contact-user-name" id="user-name" type="text" name="login" placeholder="Представьтесь, пожалуйста">
+                            </p>
+                        </fieldset>
+                        <fieldset class="form-fields">
+                            <p>
+                                <label for="user-email">Ваш e-mail</label>
+                                <input class="contact-user-email" id="user-email" type="email" name="email" placeholder="Для отправки ответа">
+                            </p>
+                        </fieldset>
+                    </div>
+
+                    <fieldset class="form-fields">
+                        <p>
+                            <label for="user-text">Текст письма</label>
+                            <textarea class="contact-user-text" id="user-text" name="text" placeholder="В свободной форме"></textarea>
+                        </p>
+                    </fieldset>
+
+
+                </div>
+
+                <button class="button button-red" type="submit">Отправить</button>
+            </form>
+            <button class="modal-close" type="button" aria-label="Закрыть"></button>
+        </section>
     </main>
 
     <footer class="page-footer container">
