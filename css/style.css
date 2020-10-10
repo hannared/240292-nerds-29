@@ -10,6 +10,7 @@
     --basic-red: #FB565A;
     --basic-hover-red: #E74246;
     --basic-active-red: #D7373B;
+    --icon-svg-light-red: #e37376;
     --basic-green: #00CA74;
     --basic-hover-green: #00BC6C;
     --basic-active-green: #00AA62;
@@ -455,7 +456,7 @@ img {
     justify-content: space-between;
 }
 
-.footer-social li {
+.social-button {
     width: 81px;
     height: 81px;
     border: none;
@@ -464,6 +465,27 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.social-button:hover {
+    background-color: var(--basic-hover-red);
+}
+
+.social-button:active {
+    background-color: var(--basic-active-red);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.social-button:active path {
+    fill: var(--icon-svg-light-red);
+}
+
+.social-button svg #facebook,
+.social-button svg #instagram {
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
 }
 
 .footer-discount {
@@ -526,6 +548,9 @@ img {
 .button-red:active {
     /* TODO: как поставить opacity на текст? */
     background-color: var(--basic-active-red);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    color: var(--basic-white);
+    opacity: 0.3;
 }
 
 .button-green:hover {
@@ -535,6 +560,7 @@ img {
 .button-green:active {
     /* TODO: как поставить opacity на текст? */
     background-color: var(--basic-active-green);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .button-yellow:hover {
@@ -544,6 +570,7 @@ img {
 .button-yellow:active {
     /* TODO: как поставить opacity на текст? */
     background-color: var(--basic-active-yellow);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .button-grey {
@@ -563,8 +590,8 @@ img {
 /*modal*/
 
 .modal-contact {
-    width: 960px;
-    height: 590px;
+    width: 760px;
+    height: 464px;
     position: fixed;
     top: 0;
     right: 0;
@@ -572,24 +599,27 @@ img {
     left: 0;
     margin: auto;
     background-color: var(--basic-white);
-    padding-top: 63px;
-    padding-left: 100px;
+    padding: 63px 100px;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
     z-index: 100;
-    display: none;
 }
 
 .modal-contact-title {
     font-size: 45px;
     font-weight: 700;
     line-height: auto;
+    margin-bottom: 37px;
 }
 
 .modal-contact-name {
     font-size: 16px;
     font-weight: 700;
     line-height: 18px;
-    margin-top: 37px;
+    margin-bottom: 9px;
+}
+
+.contact-form-user {
+    margin-bottom: 47px;
 }
 
 .contact-form input[type="text"],
@@ -597,6 +627,17 @@ img {
     width: 360px;
     height: 50px;
     box-sizing: border-box;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+textarea {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 10px;
+    color: var(--basic-grey);
+    border: 2px solid var(--stroke-inactive);
+    border-radius: 3px;
 }
 
 .contact-user-text {
@@ -618,7 +659,7 @@ img {
     border: none;
 }
 
-.modal-contact button {
+.modal-contact .modal-button {
     padding: 17px 83px;
     margin-top: 47px;
 }
@@ -627,18 +668,18 @@ img {
     display: flex;
     justify-content: space-between;
     width: 760px;
-    margin-top: 37px;
 }
 
 .modal-close {
     position: absolute;
-    top: 0;
-    right: 54px;
+    top: 78px;
+    right: 90px;
     width: 22px;
     height: 22px;
     background-color: transparent;
     border: 0;
     cursor: pointer;
+    opacity: 0.3;
 }
 
 .modal-close::before,
@@ -649,7 +690,7 @@ img {
     left: 2px;
     width: 19px;
     height: 3px;
-    background-color: #feccce;
+    background-color: var(--basic-red);
 }
 
 .modal-close::before {
@@ -658,6 +699,14 @@ img {
 
 .modal-close::after {
     transform: rotate(-45deg);
+}
+
+.modal-close:hover {
+    opacity: 1;
+}
+
+.modal-close:active {
+    opacity: 0.1;
 }
 
 
@@ -1034,6 +1083,7 @@ fieldset {
 
 .pagination-item a:active {
     background-color: var(--basic-inactive-grey);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .pagination-item a:hover,
