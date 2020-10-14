@@ -36,7 +36,7 @@
 
 body {
     min-width: 960px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -366,6 +366,13 @@ img {
     line-height: 64px;
     font-weight: 700;
     padding-bottom: 11px;
+    position: relative;
+}
+
+.percentage {
+    font-size: 26px;
+    position: absolute;
+    top: -9px;
 }
 
 .partners-container {
@@ -382,6 +389,7 @@ img {
     flex-wrap: wrap;
     padding: 0 10px;
     justify-content: center;
+    align-items: center;
 }
 
 .partners-list li {
@@ -414,7 +422,7 @@ img {
     background-color: var(--basic-white);
     position: absolute;
     top: 56px;
-    left: 379px;
+    /* left: 379px; */
 }
 
 .contacts-wrapper {
@@ -589,6 +597,10 @@ img {
 
 /*modal*/
 
+.modal {
+    display: none;
+}
+
 .modal-contact {
     width: 760px;
     height: 464px;
@@ -602,7 +614,15 @@ img {
     padding: 63px 100px;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
     z-index: 100;
-    display: none;
+}
+
+.modal-show {
+    display: block;
+    animation: bounce 0.6s;
+}
+
+.contact-form .missing-value-error {
+    border: 1px solid var(--basic-red);
 }
 
 .modal-contact-title {
@@ -623,15 +643,15 @@ img {
     margin-bottom: 47px;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"] {
+input[type="text"],
+input[type="email"] {
     width: 360px;
     height: 50px;
     box-sizing: border-box;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
+input[type="text"],
+input[type="email"],
 textarea {
     font-size: 16px;
     line-height: 18px;
@@ -708,6 +728,10 @@ textarea {
 
 .modal-close:active {
     opacity: 0.1;
+}
+
+.modal-error {
+    animation: shake 0.6s;
 }
 
 
@@ -1113,4 +1137,42 @@ fieldset {
 
 .pagination-item-current a:focus {
     background-color: var(--basic-active-grey);
+}
+
+
+/* Animations */
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+    }
+    70% {
+        transform: translateY(30px);
+    }
+    90% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
 }
