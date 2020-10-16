@@ -27,6 +27,7 @@
     --link-hover-grey: #666666;
     --border-grey: #dbdbdb;
     --border-catalog-item-grey: #dadada;
+    --arrow-active: #231F20;
 }
 
 * {
@@ -387,14 +388,19 @@ img {
 .partners-list {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 10px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-.partners-list li {
-    border-right: 1px solid var(--basic-inactive-grey);
-    padding: 0 45px;
+.partners-list li.item {
+    width: 288px;
+    text-align: center;
+}
+
+.partners-list li.border {
+    border-right: 2px solid var(--basic-inactive-grey);
+    content: "";
+    height: 52px;
 }
 
 .partners-list li:last-child {
@@ -555,10 +561,9 @@ img {
 }
 
 .button-red:active {
-    /* TODO: как поставить opacity на текст? */
     background-color: var(--basic-active-red);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-    color: var(--basic-white);
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .button-green:hover {
@@ -566,9 +571,9 @@ img {
 }
 
 .button-green:active {
-    /* TODO: как поставить opacity на текст? */
     background-color: var(--basic-active-green);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .button-yellow:hover {
@@ -576,9 +581,9 @@ img {
 }
 
 .button-yellow:active {
-    /* TODO: как поставить opacity на текст? */
     background-color: var(--basic-active-yellow);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .button-grey {
@@ -590,8 +595,8 @@ img {
 }
 
 .button-grey:active {
-    /* TODO: как поставить opacity на текст? */
     background-color: var(--basic-active-grey);
+    color: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -641,6 +646,16 @@ img {
 
 .contact-form-user {
     margin-bottom: 47px;
+}
+
+.contact-field:hover {
+    border: 2px solid var(--stroke-hover);
+}
+
+.contact-field:active,
+.contact-field:focus {
+    border: 2px solid var(--basic-black);
+    outline: none;
 }
 
 input[type="text"],
@@ -952,6 +967,30 @@ textarea {
     user-select: none;
 }
 
+.filter-input-radio[disabled]+label::before,
+.filter-input-radio[disabled]+label:hover:before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid var(--basic-inactive-grey);
+}
+
+.filter-input-radio:checked[disabled]+label::after,
+.filter-input-radio[disabled]+label:hover:after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -33px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--basic-inactive-grey);
+}
+
 .filter-input-radio+label::before {
     content: "";
     position: absolute;
@@ -972,6 +1011,26 @@ textarea {
     height: 10px;
     border-radius: 50%;
     background-color: var(--basic-active-grey);
+}
+
+.filter-input-radio+label:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid var(--control-active);
+}
+
+.filter-input-radio:checked+label:hover:after {
+    position: absolute;
+    top: 9px;
+    left: -33px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--control-active);
 }
 
 .filter-option {
@@ -1050,6 +1109,10 @@ textarea {
     color: var(--basic-black);
 }
 
+.sorting-list .sorting-list-selected {
+    color: var(--basic-black);
+}
+
 .sorting-list li {
     position: relative;
 }
@@ -1074,14 +1137,35 @@ textarea {
     border-bottom: 10px solid var(--link-basic-grey);
 }
 
+.arrow-up:hover {
+    border-bottom: 10px solid var(--link-hover-grey);
+}
+
+.arrow-down:hover {
+    border-top: 10px solid var(--link-hover-grey);
+}
+
+.arrow-up:active {
+    border-bottom: 10px solid var(--arrow-active);
+}
+
+.arrow-down:active {
+    border-top: 10px solid var(--arrow-active);
+}
+
 .arrows-list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 5px;
 }
 
 .arrows-list li {
     position: relative;
+}
+
+.arrow-down-selected {
+    border-top: 10px solid var(--arrow-active);
 }
 
 fieldset {

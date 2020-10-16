@@ -33,6 +33,8 @@ window.addEventListener("keydown", function(evt) {
             evt.preventDefault();
             contactPopup.classList.remove("modal-show");
             contactPopup.classList.remove("modal-error");
+
+            contactName.classList.remove("missing-value-error");
         }
     }
 });
