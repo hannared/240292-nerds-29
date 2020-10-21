@@ -45,10 +45,10 @@
                             <div class="range-controls">
                                 <div class="scale">
                                     <div class="bar" style="
-                                    width: 30%;
-                                    margin-left: 20%"></div>
+                                    width: 50%;
+                                    margin-left: 5%"></div>
                                 </div>
-                                <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
+                                <div class="toggle toggle-min" tabindex="0" style="left: 5%"></div>
                                 <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
                             </div>
                             <div class="price-controls">
@@ -75,7 +75,7 @@
                                 <label for="filter-fixed">Фиксированная</label>
                             </li>
                             <li class="filter-option filter-radio">
-                                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid-group" value="flexible" id="filter-flexible">
+                                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid-group" value="flexible" id="filter-flexible" disabled>
                                 <label for="filter-flexible">Резиновая</label>
                             </li>
                         </ul>
@@ -85,7 +85,7 @@
                         <legend class="sorting-text">Особенности:</legend>
                         <ul class="list-unstyled">
                             <li class="filter-option filter-checkbox">
-                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-slider " checked>
+                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-slider" checked>
                                 <label for="filter-slider"><span></span>Слайдер</label>
                             </li>
                             <li class="filter-option filter-checkbox">
@@ -93,7 +93,7 @@
                                 <label for="filter-block"><span></span>Блок преимуществ</label>
                             </li>
                             <li class="filter-option filter-checkbox">
-                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news " checked>
+                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news" checked>
                                 <label for="filter-news"><span></span>Новости</label>
                             </li>
                             <li class="filter-option filter-checkbox">
@@ -101,7 +101,7 @@
                                 <label for="filter-gallery"><span></span>Галерея</label>
                             </li>
                             <li class="filter-option filter-checkbox">
-                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="cart" id="filter-cart ">
+                                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="cart" id="filter-cart">
                                 <label for="filter-cart"><span></span>Корзина</label>
                             </li>
                         </ul>
@@ -114,28 +114,29 @@
                 <aside class="sorting">
                     <form method="GET" action="https://echo.htmlacademy.ru">
                         <fieldset class="sorting-filter filter-item">
-                            <div>
+                            <div class="sorting-filter-column">
                                 <legend class="sorting-text">Сортировать:</legend>
                             </div>
-                            <div class="sorting-filter-options">
-                                <ul class="sorting-list list-unstyled">
-                                    <li>
-                                        <a class="sorting-list-selected" href="#price">по цене</a>
-                                    </li>
-                                    <li>
-                                        <a href="#type">по типу</a>
-                                    </li>
-                                    <li>
-                                        <a href="#title">по названию</a>
-                                    </li>
-                                </ul>
-
-                            </div>
-                            <div class="arrows">
-                                <ul class="arrows-list list-unstyled">
-                                    <li class="arrow-down arrow-down-selected"></li>
-                                    <li class="arrow-up"></li>
-                                </ul>
+                            <div class="sorting-filter-column">
+                                <div class="sorting-filter-sub-column sorting-filter-options">
+                                    <ul class="sorting-list list-unstyled">
+                                        <li>
+                                            <a class="sorting-list-selected" href="#price">по цене</a>
+                                        </li>
+                                        <li>
+                                            <a href="#type">по типу</a>
+                                        </li>
+                                        <li>
+                                            <a href="#title">по названию</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sorting-filter-sub-column arrows">
+                                    <ul class="arrows-list list-unstyled">
+                                        <li class="arrow-down arrow-down-selected"></li>
+                                        <li class="arrow-up"></li>
+                                    </ul>
+                                </div>
                             </div>
                         </fieldset>
                     </form>
@@ -157,7 +158,7 @@
                                 <div class="catalog-item-price">
                                     <div class="catalog-item-price-wrapper">
                                         <a class="catalog-item-price-title" href="#">Sedona</a>
-                                        <p class="catalog-item-price-description">Информационный сайт для туристов</p>
+                                        <p class="catalog-item-price-description">Информационный сайт<br/> для туристов</p>
                                         <button class="button button-red" aria-label="Добавить сайт Седона в корзину">9 900 ₽</button>
                                     </div>
                                 </div>

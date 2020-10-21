@@ -219,7 +219,7 @@ img {
 .navigation-link-selected {
     display: inline-block;
     border-bottom: 2px solid var(--basic-red);
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .navigation-link {
@@ -412,6 +412,27 @@ img {
     padding-bottom: 40px;
 }
 
+.partners-button img {
+    opacity: 0.2;
+}
+
+.partners-button:hover img {
+    opacity: 1.0;
+}
+
+.partners-button:active img {
+    opacity: 0.1;
+}
+
+
+/* .partners-button.logo-1 {
+    background-image: url("../img/logo-2.0.png");
+    background-repeat: none;
+    width: 199px;
+    height: 68px;
+    display: inline-block;
+} */
+
 .map-container {
     display: grid;
     height: 416px;
@@ -428,7 +449,6 @@ img {
     background-color: var(--basic-white);
     position: absolute;
     top: 56px;
-    /* left: 379px; */
 }
 
 .contacts-wrapper {
@@ -658,15 +678,15 @@ img {
     outline: none;
 }
 
-input[type="text"],
-input[type="email"] {
+.contact-user-name,
+.contact-user-email {
     width: 360px;
     height: 50px;
     box-sizing: border-box;
 }
 
-input[type="text"],
-input[type="email"],
+.contact-user-name,
+.contact-user-email,
 textarea {
     font-size: 16px;
     line-height: 18px;
@@ -754,7 +774,7 @@ textarea {
 
 .main-content {
     display: flex;
-    margin-top: 55px;
+    margin-top: 47px;
 }
 
 .catalog-list {
@@ -762,7 +782,7 @@ textarea {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 48px;
-    margin-bottom: 55px;
+    margin-bottom: 28px;
 }
 
 .catalog-title {
@@ -770,7 +790,7 @@ textarea {
     line-height: 55px;
     font-weight: 500;
     margin: 0;
-    padding: 100px 0 116px 0;
+    padding: 72px 0 116px 0;
     text-align: center;
     background-color: var(--basic-inactive-grey);
 }
@@ -784,22 +804,18 @@ textarea {
     box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-.catalog-item-header {
-    background-color: var(--basic-inactive-grey);
-    border-radius: 2px 2px 0 0;
-}
-
 .catalog-item-header-selected {
     background-color: var(--control-active);
     border-radius: 2px 2px 0 0;
 }
 
 .catalog-item-circle {
-    height: 10px;
-    width: 10px;
+    height: 14px;
+    width: 14px;
     background-color: var(--basic-white);
     border-radius: 50%;
     display: inline-block;
+    margin: 12px -11px 5px 15px
 }
 
 .catalog-item-price {
@@ -807,11 +823,13 @@ textarea {
     flex-wrap: wrap;
     justify-content: center;
     background-color: var(--basic-inactive-grey);
-    width: 360px;
+    width: 358px;
     height: 231px;
     position: absolute;
-    bottom: 0px;
+    bottom: -4px;
     left: 0px;
+    border: 2px solid var(--basic-inactive-grey);
+    border-radius: 0px 0 4px 4px;
 }
 
 .catalog-item-price-wrapper {
@@ -845,12 +863,14 @@ textarea {
 }
 
 .catalog-item-price-wrapper button {
-    padding: 17px 72px;
+    padding: 14px 72px;
     margin-top: 32px;
 }
 
 .catalog-item-header {
-    width: 360px;
+    width: 362px;
+    background-color: var(--basic-inactive-grey);
+    border-radius: 2px 2px 0 0;
 }
 
 .catalog-item {
@@ -1034,12 +1054,15 @@ textarea {
 }
 
 .filter-option {
-    margin: 16px 0 28px 38px;
+    margin: 10px 0 17px 36px;
 }
 
 .filter-feature {
-    margin-top: 18px;
+    margin-top: 26px;
 }
+
+
+/* box */
 
 .filter-input-checkbox+label::before {
     content: "";
@@ -1051,6 +1074,9 @@ textarea {
     border-radius: 2px;
     border: 3px solid var(--basic-active-grey);
 }
+
+
+/* arrow 1 */
 
 .filter-input-checkbox:checked+label>span::before {
     content: "";
@@ -1064,7 +1090,86 @@ textarea {
     z-index: 1;
 }
 
+
+/* arrow 2 */
+
 .filter-input-checkbox:checked+label>span::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -28px;
+    width: 5px;
+    height: 22px;
+    transform: rotate(45deg);
+    background-color: var(--basic-active-grey);
+    border: 1px solid var(--basic-white);
+}
+
+
+/* box */
+
+.filter-input-checkbox+label:hover:before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: 0;
+    width: 19px;
+    height: 19px;
+    border-radius: 2px;
+    border: 3px solid var(--control-active);
+}
+
+.filter-input-checkbox:checked+label:hover>span:before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -37px;
+    width: 5px;
+    height: 7px;
+    transform: rotate(-45deg);
+    background-color: var(--control-active);
+    z-index: 1;
+}
+
+.filter-input-checkbox:checked+label:hover>span:after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -28px;
+    width: 5px;
+    height: 22px;
+    transform: rotate(45deg);
+    background-color: var(--control-active);
+    border: 1px solid var(--basic-white);
+}
+
+.filter-input-checkbox[disabled]+label::before,
+.filter-input-checkbox[disabled]+label:hover:before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: 0;
+    width: 19px;
+    height: 19px;
+    border-radius: 2px;
+    border: 3px solid var(--basic-inactive-grey);
+}
+
+.filter-input-checkbox[disabled]:checked+label>span::before,
+.filter-input-checkbox[disabled]:checked+label:hover>span:before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -37px;
+    width: 5px;
+    height: 7px;
+    transform: rotate(-45deg);
+    background-color: var(--basic-active-grey);
+    z-index: 1;
+}
+
+.filter-input-checkbox[disabled]:checked+label>span::after,
+.filter-input-checkbox[disabled]:checked+label:hover>span:after {
     content: "";
     position: absolute;
     top: -3px;
@@ -1079,7 +1184,7 @@ textarea {
 .filter button {
     width: 260px;
     height: 50px;
-    margin-top: 50px;
+    margin-top: 28px;
 }
 
 .sorting-filter {
@@ -1087,10 +1192,16 @@ textarea {
     justify-content: space-between;
 }
 
+.sorting-filter-column {
+    width: 362px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .sorting-list {
     display: flex;
     justify-content: space-between;
-    width: 271px;
+    width: 272px;
 }
 
 .sorting-list a {
@@ -1157,7 +1268,7 @@ textarea {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 5px;
+    padding-top: 9px;
 }
 
 .arrows-list li {
