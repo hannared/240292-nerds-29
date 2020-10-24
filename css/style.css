@@ -674,6 +674,12 @@ img {
     box-sizing: border-box;
 }
 
+.contact-user-name:invalid,
+.contact-user-email:invalid {
+    border: 2px solid var(--basic-red);
+    color: var(--basic-red);
+}
+
 .contact-user-name,
 .contact-user-email,
 textarea {

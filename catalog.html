@@ -313,13 +313,13 @@
                         <fieldset class="form-fields">
                             <p>
                                 <label for="user-name" class="modal-contact-name">Ваше имя:</label>
-                                <input class="contact-field contact-user-name" id="user-name" type="text" name="login" placeholder="Имя Фамилия">
+                                <input class="contact-field contact-user-name" id="user-name" type="text" name="login" placeholder="Имя Фамилия" pattern="[A-Za-z]{1,}">
                             </p>
                         </fieldset>
                         <fieldset class="form-fields">
                             <p>
                                 <label for="user-email" class="modal-contact-name">Ваш e-mail:</label>
-                                <input class="contact-field contact-user-email" id="user-email" type="email" name="email" placeholder="email@example.com ">
+                                <input class="contact-field contact-user-email" id="user-email" type="email" name="email" placeholder="email@example.com" title="Некорректный ввод">
                             </p>
                         </fieldset>
                     </div>
@@ -330,6 +330,8 @@
                             <textarea class="contact-field contact-user-text" id="user-text" name="text" placeholder="В свободной форме"></textarea>
                         </p>
                     </fieldset>
+
+
                 </div>
 
                 <button class="button button-red modal-button" type="submit">Отправить</button>
