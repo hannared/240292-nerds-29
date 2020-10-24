@@ -225,19 +225,15 @@ img {
 }
 
 .navigation-link .cart-link {
-    position: relative;
+    display: flex;
+    width: 112px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.cart-link::before {
-    content: "";
-    position: absolute;
+.navigation-link .cart-link img {
     width: 15px;
     height: 15px;
-    top: 5px;
-    left: -43px;
-    background-image: url("../img/cart-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
 }
 
 .slider-title {
