@@ -94,10 +94,6 @@ img {
     background-color: var(--basic-inactive-grey);
 }
 
-.hidden {
-    display: none !important;
-}
-
 .tagline {
     margin-bottom: 73px;
 }
