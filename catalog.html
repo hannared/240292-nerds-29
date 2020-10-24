@@ -43,7 +43,7 @@
                 <form class="filter" method="GET" action="https://echo.htmlacademy.ru" target="_blank">
 
                     <fieldset class="filter-range filter-item">
-                        <legend class="sorting-text">Стоимость:</legend>
+                        <div class="sorting-text">Стоимость:</div>
                         <div class="range-filter">
                             <div class="range-controls">
                                 <div class="scale">
@@ -55,19 +55,20 @@
                                 <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
                             </div>
                             <div class="price-controls">
-                                <label id="min-price">
+                                <label for="min-price">
                                     от<input class="price-range-from" type="number" name="min-price" id="min-price" min="0" value="0" step="100">
                                 </label>
 
-                                <label id="max-price">
+                                <label for="max-price">
                                     до
                                     <input class="price-range-to" type="number" name="max-price" id="max-price" max="14000" value="14000" step="100">
                                 </label>
                             </div>
+                        </div>
                     </fieldset>
 
                     <fieldset class="filter-layout filter-item">
-                        <legend class="sorting-text">Сетка:</legend>
+                        <div class="sorting-text">Сетка:</div>
                         <ul class="filter-layout-list list-unstyled">
                             <li class="filter-option filter-radio">
                                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid-group" value="adapted" id="filter-adapted" checked>
@@ -85,7 +86,7 @@
                     </fieldset>
 
                     <fieldset class="filter-feature filter-item">
-                        <legend class="sorting-text">Особенности:</legend>
+                        <div class="sorting-text">Особенности:</div>
                         <ul class="list-unstyled">
                             <li class="filter-option filter-checkbox">
                                 <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-slider" checked disabled>
@@ -118,7 +119,7 @@
                     <form method="GET" action="https://echo.htmlacademy.ru">
                         <fieldset class="sorting-filter filter-item">
                             <div class="sorting-filter-column">
-                                <legend class="sorting-text">Сортировать:</legend>
+                                <div class="sorting-text">Сортировать:</div>
                             </div>
                             <div class="sorting-filter-column">
                                 <div class="sorting-filter-sub-column sorting-filter-options">
@@ -283,59 +284,59 @@
                     </li>
                 </ul>
             </div>
+        </div>
+
+        <div class="map">
+            <div class="map-container">
+                <div id="map"></div>
             </div>
 
-            <div class="map">
-                <div class="map-container">
-                    <div id="map"></div>
-                </div>
-
-                <div class="contacts-container container">
-                    <div class="contacts">
-                        <div class="contacts-wrapper">
-                            <h2 class="visually-hidden">Контакты</h2>
-                            <h4 class="contacts-title">NЁRDS DESIGN STUDIO</h4>
-                            <p class="contacts-block">191186, Санкт-Петербург,<br/> ул. Б. Конюшенная, д. 19/8</p>
-                            <p class="contacts-phone">тел. <a class="contacts-phone-number" href="tel:+7(812)275-75-75">+7 (812) 275-75-75</a></p>
-                            <a class="button button-red button-contact" href="contact.html">Напишите нам</a>
-                        </div>
+            <div class="contacts-container container">
+                <div class="contacts">
+                    <div class="contacts-wrapper">
+                        <h2 class="visually-hidden">Контакты</h2>
+                        <h4 class="contacts-title">NЁRDS DESIGN STUDIO</h4>
+                        <p class="contacts-block">191186, Санкт-Петербург,<br/> ул. Б. Конюшенная, д. 19/8</p>
+                        <p class="contacts-phone">тел. <a class="contacts-phone-number" href="tel:+7(812)275-75-75">+7 (812) 275-75-75</a></p>
+                        <a class="button button-red button-contact" href="contact.html">Напишите нам</a>
                     </div>
                 </div>
             </div>
-            <section class="modal modal-contact">
-                <h2 class="modal-contact-title">Напишите нам</h2>
-                <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
-                    <div>
-                        <div class="contact-form-user">
-                            <fieldset class="form-fields">
-                                <p>
-                                    <label for="user-name" class="modal-contact-name">Ваше имя:</label>
-                                    <input class="contact-field contact-user-name" id="user-name" type="text" name="login" placeholder="Имя Фамилия">
-                                </p>
-                            </fieldset>
-                            <fieldset class="form-fields">
-                                <p>
-                                    <label for="user-email" class="modal-contact-name">Ваш e-mail:</label>
-                                    <input class="contact-field contact-user-email" id="user-email" type="email" name="email" placeholder="email@example.com ">
-                                </p>
-                            </fieldset>
-                        </div>
-
+        </div>
+        <section class="modal modal-contact">
+            <h2 class="modal-contact-title">Напишите нам</h2>
+            <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+                <div>
+                    <div class="contact-form-user">
                         <fieldset class="form-fields">
                             <p>
-                                <label for="user-text" class="modal-contact-name">Текст письма:</label>
-                                <textarea class="contact-field contact-user-text" id="user-text" name="text" placeholder="В свободной форме"></textarea>
+                                <label for="user-name" class="modal-contact-name">Ваше имя:</label>
+                                <input class="contact-field contact-user-name" id="user-name" type="text" name="login" placeholder="Имя Фамилия">
+                            </p>
+                        </fieldset>
+                        <fieldset class="form-fields">
+                            <p>
+                                <label for="user-email" class="modal-contact-name">Ваш e-mail:</label>
+                                <input class="contact-field contact-user-email" id="user-email" type="email" name="email" placeholder="email@example.com ">
                             </p>
                         </fieldset>
                     </div>
 
-                    <button class="button button-red modal-button" type="submit">Отправить</button>
-                </form>
+                    <fieldset class="form-fields">
+                        <p>
+                            <label for="user-text" class="modal-contact-name">Текст письма:</label>
+                            <textarea class="contact-field contact-user-text" id="user-text" name="text" placeholder="В свободной форме"></textarea>
+                        </p>
+                    </fieldset>
+                </div>
 
-                <button class="modal-close" type="button" aria-label="Закрыть"></button>
-            </section>
+                <button class="button button-red modal-button" type="submit">Отправить</button>
+            </form>
+
+            <button class="modal-close" type="button" aria-label="Закрыть"></button>
+        </section>
     </main>
-    </main>
+
     <footer class="page-footer container">
         <ul class="footer-social list-unstyled">
             <li>
