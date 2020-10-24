@@ -1006,14 +1006,8 @@ textarea {
 
 .filter-input-radio:checked[disabled]+label::after,
 .filter-input-radio[disabled]+label:hover:after {
-    content: "";
-    position: absolute;
-    top: 9px;
-    left: -33px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--basic-inactive-grey);
+    width: 0px;
+    height: 0px;
 }
 
 .filter-input-radio+label::before {
@@ -1169,7 +1163,7 @@ textarea {
     width: 5px;
     height: 7px;
     transform: rotate(-45deg);
-    background-color: var(--basic-active-grey);
+    background-color: var(--basic-inactive-grey);
     z-index: 1;
 }
 
@@ -1182,7 +1176,7 @@ textarea {
     width: 5px;
     height: 22px;
     transform: rotate(45deg);
-    background-color: var(--basic-active-grey);
+    background-color: var(--basic-inactive-grey);
     border: 1px solid var(--basic-white);
 }
 
