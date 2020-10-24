@@ -106,13 +106,17 @@ img {
     position: relative;
 }
 
+.slider .slider-item {
+    display: none;
+}
+
+.slider .current-slider {
+    display: flex;
+}
+
 .slider-item img {
     position: relative;
     left: 400px;
-}
-
-.slider-item {
-    display: flex;
 }
 
 .slider-item-text {
