@@ -32,13 +32,11 @@ if (contactForm) {
 }
 
 window.addEventListener("keydown", function(evt) {
-    if (evt.key === "Escape") {
-        if (contactPopup.classList.contains("modal-show")) {
-            evt.preventDefault();
-            contactPopup.classList.remove("modal-show");
-            contactPopup.classList.remove("modal-error");
+    if (evt.key === "Escape" && contactPopup.classList.contains("modal-show")) {
+        evt.preventDefault();
+        contactPopup.classList.remove("modal-show");
+        contactPopup.classList.remove("modal-error");
 
-            contactName.classList.remove("missing-value-error");
-        }
+        contactName.classList.remove("missing-value-error");
     }
 });
