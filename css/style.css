@@ -7,6 +7,7 @@
     --basic-inactive-grey: #EEEEEE;
     --basic-hover-grey: #DFDFDF;
     --basic-active-grey: #D5D5D5;
+    --grey-input-text: #283136;
     --basic-red: #FB565A;
     --basic-hover-red: #E74246;
     --basic-active-red: #D7373B;
@@ -28,6 +29,9 @@
     --border-grey: #dbdbdb;
     --border-catalog-item-grey: #dadada;
     --arrow-active: #231F20;
+    --input-toggle: #f1f1f1;
+    --toggle-shadow: #cfcfcf;
+    --toggle-center: #ababab;
 }
 
 * {
@@ -928,7 +932,7 @@ textarea {
 .range-controls {
     position: relative;
     height: 41px;
-    background-color: #f1f1f1;
+    background-color: var(--input-toggle);
     border-radius: 5px;
     margin-bottom: 15px;
     padding-top: 39px;
@@ -938,13 +942,13 @@ textarea {
 
 .range-controls .scale {
     height: 2px;
-    background: #d7dcde;
+    background: var(--stroke-inactive);
 }
 
 .range-controls .bar {
     width: 70%;
     height: 2px;
-    background: #00ca74;
+    background: var(--basic-green);
 }
 
 .range-controls .toggle {
@@ -954,10 +958,10 @@ textarea {
     width: 4px;
     height: 4px;
     padding: 0;
-    border: 8px solid #ffffff;
-    background-color: #ababab;
+    border: 8px solid var(--basic-white);
+    background-color: var(--toggle-center);
     border-radius: 50%;
-    box-shadow: 0 2px 1px 0 #cfcfcf;
+    box-shadow: 0 2px 1px 0 var(--toggle-shadow);
     cursor: pointer;
 }
 
@@ -979,15 +983,31 @@ textarea {
     justify-content: space-between;
 }
 
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 .price-controls input {
     width: 80px;
-    padding: 10px;
+    padding: 8px 0px;
     margin-left: 10px;
     text-align: center;
-    color: #283136;
+    color: var(--grey-input-text);
     border: none;
     border-radius: 5px;
-    background: #f1f1f1;
+    background: var(--input-toggle);
     font-family: inherit;
     font-size: inherit;
 }
@@ -1012,7 +1032,11 @@ textarea {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    border: 4px solid var(--basic-inactive-grey);
+    border: 4px solid var(--basic-active-grey);
+}
+
+.filter-input-radio[disabled]+label {
+    opacity: 0.3;
 }
 
 .filter-input-radio:checked[disabled]+label::after,
@@ -1064,7 +1088,7 @@ textarea {
 }
 
 .filter-option {
-    margin: 10px 0 17px 36px;
+    margin: 12px 0 17px 36px;
 }
 
 .filter-feature {
