@@ -1,10 +1,14 @@
 let slideIndex = 0;
 
 function showSlides() {
-    const slides = document.getElementsByClassName("slider-item");
+    const slides = document.querySelectorAll("slider-item");
     // slides.length -> 3
-    const dots = document.getElementsByClassName("dot");
+    const dots = document.querySelectorAll("dot");
     // dots.length -> 3
+
+    if (slides.length == 0) {
+        return;
+    }
 
     for (let i = 0; i < slides.length; i++) {
         slides[i].classList.remove('current-slider');

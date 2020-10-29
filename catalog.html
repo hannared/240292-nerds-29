@@ -7,7 +7,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="css/normalize.min.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -180,8 +180,9 @@
                                 </a>
                                 <div class="catalog-item-price">
                                     <div class="catalog-item-price-wrapper">
-                                        <h2 class="catalog-item-price-title">Pink</h2>
-                                        <p class="catalog-item-price-description">Информационный сайт для туристов</p>
+                                        <a class="catalog-item-price-title">Pink App</a>
+                                        <p class="catalog-item-price-description">Продуктовый лендинг
+                                            <br\>приложения для iOS и Android</p>
                                         <button class="button button-red" aria-label="Добавить сайт Пинк в корзину">9 900 ₽</button>
                                     </div>
                                 </div>
@@ -199,8 +200,9 @@
                                 </a>
                                 <div class="catalog-item-price">
                                     <div class="catalog-item-price-wrapper">
-                                        <h2 class="catalog-item-price-title">Barbershop</h2>
-                                        <p class="catalog-item-price-description">Информационный сайт для туристов</p>
+                                        <a class="catalog-item-price-title">Barbershop</a>
+                                        <p class="catalog-item-price-description">Сайт салона красоты.
+                                            <br\>Для мужчин, да.</p>
                                         <button class="button button-red" aria-label="Добавить сайт Барбершоп в корзину">9 900 ₽</button>
                                     </div>
                                 </div>
@@ -219,8 +221,9 @@
                                 </a>
                                 <div class="catalog-item-price">
                                     <div class="catalog-item-price-wrapper">
-                                        <h2 class="catalog-item-price-title">Mishka</h2>
-                                        <p class="catalog-item-price-description">Информационный сайт для туристов</p>
+                                        <a class="catalog-item-price-title">Mishka</a>
+                                        <p class="catalog-item-price-description">Интернет-магазин
+                                            <br\>вязаных игрушек</p>
                                         <button class="button button-red" aria-label="Добавить сайт Мишка в корзину">9 900 ₽</button>
                                     </div>
                                 </div>
@@ -239,8 +242,9 @@
                                 </a>
                                 <div class="catalog-item-price">
                                     <div class="catalog-item-price-wrapper">
-                                        <h2 class="catalog-item-price-title">Aplus</h2>
-                                        <p class="catalog-item-price-description">Информационный сайт для туристов</p>
+                                        <h2 class="catalog-item-price-title">A plus</h2>
+                                        <p class="catalog-item-price-description">Лендинг курсов повышения
+                                            <br\>квалификации</p>
                                         <button class="button button-red" aria-label="Добавить сайт Аплюс в корзину">9 900 ₽</button>
                                     </div>
                                 </div>
@@ -259,8 +263,9 @@
                                 </a>
                                 <div class="catalog-item-price">
                                     <div class="catalog-item-price-wrapper">
-                                        <h2 class="catalog-item-price-title">Kvast</h2>
-                                        <p class="catalog-item-price-description">Информационный сайт для туристов</p>
+                                        <h2 class="catalog-item-price-title">Кваст</h2>
+                                        <p class="catalog-item-price-description">Промо-сайт производителя
+                                            <br\>крафтового кваса</p>
                                         <button class="button button-red" aria-label="Добавить сайт Кваст в корзину">9 900 ₽</button>
                                     </div>
                                 </div>
@@ -337,6 +342,12 @@
 
             <button class="modal-close" type="button" aria-label="Закрыть"></button>
         </section>
+
+        <section class="modal modal-catalog-item">
+            <h2>Купи меня</h2>
+
+            <button class="modal-close" type="button" aria-label="Закрыть"></button>
+        </section>
     </main>
 
     <footer class="page-footer container">
@@ -399,7 +410,8 @@
         </div>
     </footer>
 
-    <script src="js/bundle.min.js"></script>
+    <script src="js/modal-catalog.js"></script>
+
     <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9gQQ9VEC1RVc6mKvGpTQT2QxhcTa1LqY&callback=initMap">
     </script>
 </body>
