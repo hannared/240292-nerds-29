@@ -379,8 +379,8 @@ img {
 }
 
 .partners-container {
-    padding-top: 45px;
     margin-bottom: 76px;
+    padding: 45px 8px;
 }
 
 .borders {
@@ -399,10 +399,12 @@ img {
     text-align: center;
 }
 
-.partners-list li.border {
+.partners-list li span.border {
     border-right: 2px solid var(--basic-inactive-grey);
     content: "";
     height: 52px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .partners-list li:last-child {
