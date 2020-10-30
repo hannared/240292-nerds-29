@@ -40,13 +40,13 @@
     <main>
         <article class="tagline">
             <div class="container">
-                <figure class="slider current-slider">
+                <figure class="slider">
                     <ul class="slider-list list-unstyled ">
-                        <li class="slider-item">
+                        <li class="slider-item current-slider">
                             <div class="slider-item-text">
                                 <p class="slider-title">Долго, дорого, скрупулезно.</p>
                                 <h3 class="slider-description">Математически выверенный дизайн<br/> для вашего сайта или мобильного приложения.</h3>
-                                <button type="button" class="button button-red">Узнать больше</button>
+                                <a type="button" class="button button-red" href="#figure1" title="Узнать больше">Узнать больше</a>
                             </div>
                             <img src="img/nerds-index-slide1.1.png" width="760" height="431" alt="Мобильные приложения">
                         </li>
@@ -54,7 +54,7 @@
                             <div class="slider-item-text">
                                 <p class="slider-title">Любим математику как никто другой</p>
                                 <h3 class="slider-description">Никакого креатива, только математические формулы для расчета идеальных пропорций</h3>
-                                <button type="button" class="button button-red">Узнать больше</button>
+                                <a type="button" class="button button-red" href="#figure2" title="Узнать больше">Узнать больше</a>
                             </div>
                             <img src="img/nerds-index-slide2.1.png" width="760" height="431" alt="Мобильные приложения">
                         </li>
@@ -62,7 +62,7 @@
                             <div class="slider-item-text">
                                 <p class="slider-title">Только ночь,<br/> только хардкор</p>
                                 <h3 class="slider-description">Работать днем, как все? Мы против этого.<br/> Ближе к полуночи работа только начинается.</h3>
-                                <button type="button" class="button button-red">Узнать больше</button>
+                                <a type="button" class="button button-red" href="#figure3" title="Узнать больше">Узнать больше</a>
                             </div>
                             <img src="img/nerds-index-slide3.1.png" width="760" height="431" alt="Мобильные приложения">
                         </li>
@@ -73,8 +73,6 @@
                         <button type="button" class="dot" aria-label="Третий слайд"></button>
                     </div>
                 </figure>
-
-
             </div>
         </article>
 
@@ -92,7 +90,7 @@
                                 <p class="services-description">
                                     Мир никогда не будет прежним после того как увидит ваш сайт!
                                 </p>
-                                <button class="button button-red">Заказать</button>
+                                <a class="button button-red" href="#service1" title="Заказать Веб-сайты">Заказать</a>
                             </div>
                         </div>
                     </li>
@@ -104,7 +102,7 @@
                             <div class="services-buy-container">
                                 <h3 class="services-title">Приложения</h3>
                                 <p class="services-description">Покорите топ-10 приложений<br/>в AppStore и Google Play</p>
-                                <button class="button button-green">Заказать</button>
+                                <a class="button button-green" href="#service2" title="Заказать Приложение для AppStore и Google Play">Заказать</a>
                             </div>
                         </div>
                     </li>
@@ -118,7 +116,7 @@
                                 <p class="services-description">
                                     Вы даже не подозреваете, насколько вы изумительны!
                                 </p>
-                                <button class="button button-yellow">Заказать</button>
+                                <a class="button button-yellow" href="#service3" title="Заказать Презентацию">Заказать</a>
                             </div>
                         </div>
                     </li>
@@ -196,7 +194,11 @@
 
         <div class="map">
             <div class="map-container">
-                <div id="map"></div>
+                <div id="map">
+                    <div class="offline-map">
+                        <img src="./img/map.png" alt="карта" />
+                    </div>
+                </div>
             </div>
 
             <div class="contacts-container container">
@@ -206,7 +208,7 @@
                         <h4 class="contacts-title">NЁRDS DESIGN STUDIO</h4>
                         <p class="contacts-block">191186, Санкт-Петербург,<br/> ул. Б. Конюшенная, д. 19/8</p>
                         <p class="contacts-phone">тел. <a class="contacts-phone-number" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-                        <a class="button button-red button-contact" href="contact.html">Напишите нам</a>
+                        <a class="button button-red button-contact" href="contact.html" title="Напишите нам">Напишите нам</a>
                     </div>
                 </div>
             </div>
@@ -250,7 +252,7 @@
     <footer class="page-footer container">
         <ul class="footer-social list-unstyled">
             <li>
-                <a class="social-button" href="https://www.vk.com" target="_blank">
+                <a class="social-button" href="https://www.vk.com" target="_blank" title="Vkontakte">
                     <span class="visually-hidden">Vkontakte</span>
                     <svg role="img" aria-label="Логотип Вконтакте" width="27" height="15" viewBox="0 0 27 15">
                         <path d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621 
@@ -274,12 +276,13 @@
                         0.0699697 1.61404 0.0699697 1.61404C0.0699697 1.61404 2.97897 
                         8.49504 6.27297 11.961C9.29297 15.143 12.725 14.932 12.725 
                         14.932H14.28C14.28 14.932 14.749 14.878 14.989 14.62C15.213 14.38 
-                        15.203 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z" fill="white"/>
+                        15.203 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z"
+                        fill="white" />
                     </svg>
                 </a>
             </li>
             <li>
-                <a class="social-button" href="https://www.facebook.com/" target="_blank">
+                <a class="social-button" href="https://www.facebook.com/" target="_blank" title="Facebook">
                     <span class="visually-hidden">Facebook</span>
                     <svg role="img" aria-label="Логотип Фэйсбук" width="12" height="22" viewBox="0 0 12 22">
                         <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
@@ -287,7 +290,7 @@
                 </a>
             </li>
             <li>
-                <a class="social-button" href="https://www.instagram.com" target="_blank">
+                <a class="social-button" href="https://www.instagram.com" target="_blank" title="Instagram">
                     <span class="visually-hidden">Instagram</span>
                     <svg role="img" aria-label="Логотип Инстаграм" width="21" height="21" viewBox="0 0 21 21">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 
@@ -296,8 +299,6 @@
                         18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 
                         17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z" fill="white"/>
                     </svg>
-
-
                 </a>
             </li>
         </ul>
