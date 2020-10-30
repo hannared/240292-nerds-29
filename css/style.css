@@ -739,6 +739,7 @@ textarea {
 
 .form-fields {
     border: none;
+    padding: 0px;
 }
 
 .modal-contact .modal-button {
@@ -955,6 +956,7 @@ textarea {
 
 .filter-item {
     border: none;
+    padding: 0px;
 }
 
 .range-filter {
@@ -1125,7 +1127,7 @@ input[type=number] {
 }
 
 .filter-option {
-    margin: 12px 0 17px 36px;
+    margin: 12px 0 17px 40px;
 }
 
 .filter-feature {
@@ -1370,6 +1372,7 @@ input[type=number] {
     color: var(--basic-black);
     background-color: var(--basic-inactive-grey);
     border-radius: 3px;
+    line-height: 18px;
 }
 
 .pagination-item {
@@ -1378,7 +1381,6 @@ input[type=number] {
 
 .pagination-item-next a {
     font-weight: 500;
-    line-height: 18px;
     padding: 13px 78px;
     text-transform: uppercase;
     border-radius: 3px;
