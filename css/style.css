@@ -1275,6 +1275,7 @@ input[type=number] {
     display: flex;
     justify-content: space-between;
     width: 272px;
+    flex-wrap: wrap;
 }
 
 .sorting-list a {
