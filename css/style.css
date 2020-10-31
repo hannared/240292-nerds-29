@@ -1065,6 +1065,10 @@ input[type=number] {
     user-select: none;
 }
 
+.filter-option .filter-cross {
+    margin-right: -5px;
+}
+
 .filter-input-radio[disabled]+label::before,
 .filter-input-radio[disabled]+label:hover:before {
     content: "";
