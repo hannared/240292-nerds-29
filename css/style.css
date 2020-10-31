@@ -929,9 +929,11 @@ textarea {
     color: var(--link-hover-grey);
 }
 
-.catalog-item-price-wrapper button {
+.catalog-item-price-wrapper .button {
     padding: 16px 72px;
     margin-top: 19px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .catalog-item-header {
@@ -1073,8 +1075,8 @@ input[type=number] {
 .filter-input-radio[disabled]+label:hover:before {
     content: "";
     position: absolute;
-    left: -42px;
-    top: 0;
+    left: -39px;
+    top: -3px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -1096,8 +1098,8 @@ input[type=number] {
 .filter-input-radio+label::before {
     content: "";
     position: absolute;
-    left: -42px;
-    top: 0;
+    left: -39px;
+    top: -3px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -1107,8 +1109,8 @@ input[type=number] {
 .filter-input-radio:checked+label::after {
     content: "";
     position: absolute;
-    top: 9px;
-    left: -33px;
+    top: 6px;
+    left: -30px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -1118,7 +1120,8 @@ input[type=number] {
 .filter-input-radio+label:hover:before {
     content: "";
     position: absolute;
-    top: 0;
+    left: -39px;
+    top: -3px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -1127,8 +1130,8 @@ input[type=number] {
 
 .filter-input-radio:checked+label:hover:after {
     position: absolute;
-    top: 9px;
-    left: -33px;
+    top: 6px;
+    left: -30px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -1182,13 +1185,14 @@ input[type=number] {
 .filter-input-checkbox:checked+label>span::after {
     content: "";
     position: absolute;
-    top: -3px;
+    top: -3.7px;
     left: -28px;
     width: 5px;
     height: 22px;
     transform: rotate(45deg);
     background-color: var(--basic-active-grey);
     border: 1px solid var(--basic-white);
+    border-bottom: none;
 }
 
 
@@ -1220,13 +1224,14 @@ input[type=number] {
 .filter-input-checkbox:checked+label:hover>span:after {
     content: "";
     position: absolute;
-    top: -3px;
+    top: -3.7px;
     left: -28px;
     width: 5px;
     height: 22px;
     transform: rotate(45deg);
     background-color: var(--control-active);
     border: 1px solid var(--basic-white);
+    border-bottom: none;
 }
 
 .filter-input-checkbox[disabled]+label::before,
@@ -1258,7 +1263,7 @@ input[type=number] {
 .filter-input-checkbox[disabled]:checked+label:hover>span:after {
     content: "";
     position: absolute;
-    top: -3px;
+    top: -3.5px;
     left: -28px;
     width: 5px;
     height: 22px;
