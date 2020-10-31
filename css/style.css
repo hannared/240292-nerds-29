@@ -85,7 +85,7 @@ img {
 .main-navigation-wrapper {
     display: grid;
     grid-template-columns: 1fr min-content;
-    margin-top: 78px;
+    margin-top: 75px;
 }
 
 .main-header-logo {
@@ -232,7 +232,7 @@ img {
 
 .navigation-link .cart-link {
     display: flex;
-    width: 112px;
+    width: 115px;
     justify-content: space-between;
     align-items: center;
 }
@@ -253,8 +253,8 @@ img {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    margin-top: 25px;
-    margin-bottom: 40px;
+    margin-top: 28px;
+    margin-bottom: 50px;
     width: 415px;
     color: var(--grey-input-text);
 }
@@ -276,7 +276,7 @@ img {
 }
 
 .services-borders {
-    padding-bottom: 80px;
+    padding-bottom: 95px;
 }
 
 .description-borders {
@@ -379,7 +379,7 @@ img {
 }
 
 .partners-container {
-    margin-bottom: 76px;
+    margin-bottom: 31px;
     padding: 45px 8px;
 }
 
@@ -453,7 +453,7 @@ img {
 
 .contacts-wrapper {
     margin-top: 52px;
-    margin-left: 51px;
+    margin-left: 49px;
     width: 218px;
 }
 
@@ -482,8 +482,8 @@ img {
 }
 
 .contacts-wrapper .button {
-    width: 219px;
-    height: 50px;
+    width: 218px;
+    height: 49px;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -559,7 +559,7 @@ img {
 }
 
 .slider-item .button {
-    padding: 14px 55px;
+    padding: 15px 54px;
 }
 
 .button:hover {
@@ -803,7 +803,7 @@ textarea {
 
 .main-content {
     display: flex;
-    margin-top: 47px;
+    margin-top: 55px;
 }
 
 .catalog-list {
@@ -811,7 +811,7 @@ textarea {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 48px;
-    margin-bottom: 28px;
+    margin-bottom: 25px;
 }
 
 .catalog-title {
@@ -819,13 +819,13 @@ textarea {
     line-height: 55px;
     font-weight: 500;
     margin: 0;
-    padding: 72px 0 116px 0;
+    padding: 70px 0 109px 0;
     text-align: center;
     background-color: var(--basic-inactive-grey);
 }
 
 .catalog-item {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     position: relative;
     display: grid;
     width: 360px;
@@ -929,8 +929,8 @@ textarea {
 }
 
 .catalog-item-price-wrapper button {
-    padding: 14px 72px;
-    margin-top: 32px;
+    padding: 16px 72px;
+    margin-top: 19px;
 }
 
 .catalog-item-header {
@@ -1130,8 +1130,12 @@ input[type=number] {
     background-color: var(--control-active);
 }
 
-.filter-option {
-    margin: 12px 0 17px 40px;
+.filter-radio {
+    margin: 17px 0 21px 37px;
+}
+
+.filter-checkbox {
+    margin: 16px 0px 21px 41px;
 }
 
 .filter-feature {
@@ -1372,7 +1376,7 @@ input[type=number] {
 
 .pagination-item a {
     display: block;
-    padding: 13px 21px;
+    padding: 15px 21px;
     color: var(--basic-black);
     background-color: var(--basic-inactive-grey);
     border-radius: 3px;
@@ -1403,7 +1407,7 @@ input[type=number] {
 .pagination-item-current a,
 .pagination-item-current a:hover,
 .pagination-item-current a:active {
-    padding: 10px 17px;
+    padding: 12px 17px;
     border: 3px solid var(--border-grey);
     color: var(--basic-black);
     background-color: var(--basic-white);
