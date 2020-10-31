@@ -91,6 +91,7 @@ img {
 .main-header-logo {
     width: 160px;
     margin-top: 48px;
+    height: 65px;
 }
 
 .main-header,
@@ -99,7 +100,7 @@ img {
 }
 
 .tagline {
-    margin-bottom: 73px;
+    margin-bottom: 81px;
 }
 
 .slider {
@@ -246,7 +247,7 @@ img {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
-    margin-top: 70px;
+    margin-top: 77px;
 }
 
 .slider-description {
