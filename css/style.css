@@ -834,11 +834,13 @@ textarea {
     background-color: white;
 }
 
-.catalog-item:hover {
+.catalog-item:hover,
+.catalog-item:focus {
     box-shadow: 0 5px 7px 5px rgba(0, 0, 0, 0.2);
 }
 
-.catalog-item:hover .catalog-item-header {
+.catalog-item:hover .catalog-item-header,
+.catalog-item:focus .catalog-item-header {
     background-color: var(--control-active);
     border-radius: 2px 2px 0 0;
 }
@@ -872,7 +874,8 @@ textarea {
     overflow: hidden;
 }
 
-.catalog-item:hover .catalog-item-price {
+.catalog-item:hover .catalog-item-price,
+.catalog-item:focus .catalog-item-price {
     display: flex;
 }
 
@@ -882,7 +885,8 @@ textarea {
     border-bottom-right-radius: 7px;
 }
 
-.catalog-item:hover img {
+.catalog-item:hover img,
+.catalog-item:focus img {
     border: none;
 }
 
@@ -893,7 +897,8 @@ textarea {
     width: 358px;
 }
 
-.catalog-item:hover .catalog-item-img {
+.catalog-item:hover .catalog-item-img,
+.catalog-item:focus .catalog-item-img {
     border: none;
     width: 360px;
 }
