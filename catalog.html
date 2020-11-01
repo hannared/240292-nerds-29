@@ -7,7 +7,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="css/normalize.min.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -37,7 +37,9 @@
     </header>
 
     <main class="main-container">
-        <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+        <div class="catalog-title">
+            <h1 class="catalog-title-inner">Магазин готовых шаблонов</h1>
+        </div>
 
         <div class="main-content container">
             <section class="filters">
@@ -117,7 +119,7 @@
 
             <div class="main-content-catalog">
                 <div class="sorting">
-                    <fieldset class="sorting-filter filter-item">
+                    <div class="sorting-filter">
                         <div class="sorting-filter-column">
                             <div class="sorting-text">Сортировать:</div>
                         </div>
@@ -142,7 +144,7 @@
                                 </div>
                             </div>
                         </div>
-                    </fieldset>
+                    </div>
                 </div>
 
                 <article class="catalog">
@@ -295,7 +297,11 @@
 
         <div class="map">
             <div class="map-container">
-                <div id="map"></div>
+                <div id="map">
+                    <div class="offline-map">
+                        <img src="./img/map.png" width="1440" height="416" alt="карта" />
+                    </div>
+                </div>
             </div>
 
             <div class="contacts-container container">
@@ -323,7 +329,7 @@
                         </fieldset>
                         <fieldset class="form-fields">
                             <p>
-                                <label for="user-email" class="modal-contact-name">Ваш e-mail:</label>
+                                <label for="user-email" class="modal-contact-name">Ваш email:</label>
                                 <input class="contact-field contact-user-email" id="user-email" type="email" name="email" placeholder="email@example.com" title="Некорректный ввод">
                             </p>
                         </fieldset>
