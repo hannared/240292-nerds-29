@@ -737,7 +737,7 @@ img {
 
 .contact-user-name,
 .contact-user-email,
-textarea {
+.contact-user-text {
     font-size: 16px;
     line-height: 18px;
     padding: 16px 14px 16px 16px;
@@ -1065,9 +1065,13 @@ textarea {
 
 /* Chrome, Safari, Edge, Opera */
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+
+/* Example: https://css-tricks.com/numeric-inputs-a-comparison-of-browser-defaults/ */
+
+.price-range::-webkit-outer-spin-button,
+.price-range::-webkit-inner-spin-button {
     -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     margin: 0;
 }
@@ -1075,7 +1079,7 @@ input::-webkit-inner-spin-button {
 
 /* Firefox */
 
-input[type=number] {
+.price-range {
     -moz-appearance: textfield;
     appearance: textfield;
 }
