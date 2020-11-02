@@ -62,7 +62,7 @@ img {
     width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 0 20px;
+    padding: 0 18px;
 }
 
 .visually-hidden {
@@ -172,7 +172,7 @@ img {
 }
 
 .services-list .button {
-    padding: 15px 39px;
+    padding: 15px 40px;
     display: inline;
 }
 
@@ -203,7 +203,7 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 437px;
-    margin-left: 200px;
+    margin-left: 202px;
 }
 
 .navigation-links-style a {
@@ -234,7 +234,7 @@ img {
 
 .navigation-link .cart-link {
     display: flex;
-    width: 115px;
+    width: 118px;
     justify-content: space-between;
     align-items: center;
 }
@@ -283,7 +283,7 @@ img {
 }
 
 .services-borders {
-    padding-bottom: 95px;
+    padding-bottom: 94px;
 }
 
 .description-borders {
@@ -344,7 +344,7 @@ img {
 }
 
 .description-right {
-    width: 360px;
+    width: 365px;
     margin-top: 40px;
 }
 
@@ -359,12 +359,12 @@ img {
 }
 
 .description-numbers li {
-    width: 120px;
+    width: 121px;
 }
 
 .description-right-list {
     padding-bottom: 31px;
-    padding-left: 15px;
+    padding-left: 17px;
 }
 
 .description-numbers-details {
@@ -385,13 +385,14 @@ img {
 .percentage {
     font-size: 26px;
     line-height: 40px;
+    font-weight: 700;
     position: absolute;
     top: 3px;
 }
 
 .partners-container {
-    margin-bottom: 31px;
-    padding: 45px 8px;
+    margin-bottom: 36px;
+    padding: 45px 20px;
 }
 
 .borders {
@@ -405,26 +406,41 @@ img {
     align-items: center;
 }
 
+.partners-list li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .partners-list li.item {
-    width: 288px;
+    width: 260px;
     text-align: center;
+    height: 100px;
 }
 
-.partners-list li span.border {
-    border-right: 2px solid var(--basic-inactive-grey);
+.partners-list .item::after {
     content: "";
+    position: absolute;
+    top: 17px;
+    right: -19px;
+    width: 2px;
     height: 52px;
-    display: inline-block;
-    vertical-align: top;
+    background-color: var(--basic-inactive-grey);
 }
 
-.partners-list li:last-child {
-    border: none;
-    padding-right: 0px;
+.partners-list .item:last-child::after {
+    background: none;
+    width: 0px;
 }
 
 .partners-borders {
-    padding-bottom: 40px;
+    padding-bottom: 33px;
+}
+
+.partners-button {
+    display: inline-block;
+    vertical-align: top;
 }
 
 .partners-button img {
@@ -505,7 +521,7 @@ img {
 }
 
 .page-footer {
-    margin-top: 69px;
+    margin-top: 66px;
     margin-bottom: 70px;
     display: flex;
     flex-wrap: wrap;
@@ -1191,7 +1207,7 @@ img {
 }
 
 .filter-feature {
-    margin-top: 26px;
+    margin-top: 23px;
 }
 
 
